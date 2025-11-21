@@ -1,0 +1,24 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  background: var(--editor-bg);
+  overflow: hidden;
+}
+
+.mainContent {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  flex: 1;
+  overflow: hidden;
+}
+
+.codeArea {
+  overflow: hidden;
+  border-right: 1px solid var(--border-color);
+}
+
+.chatArea {
+  overflow: hidden;
+  background: var(--panel-bg);
+}

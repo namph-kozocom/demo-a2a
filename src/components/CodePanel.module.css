@@ -1,0 +1,106 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  background: var(--editor-bg);
+}
+
+/* Sandpack global styles */
+.container :global(.sp-wrapper) {
+  height: 100% !important;
+}
+
+.container :global(.sp-layout) {
+  height: 100% !important;
+  border: none !important;
+}
+
+.container :global(.sp-stack) {
+  height: 100% !important;
+}
+
+.container :global(.sp-preview-iframe) {
+  height: 100% !important;
+}
+
+/* Fix file explorer styling */
+.container :global(.sp-file-explorer) {
+  background: var(--sidebar-bg) !important;
+  border-right: 1px solid var(--border-color) !important;
+  min-width: 200px !important;
+}
+
+.container :global(.sp-file-explorer .sp-button) {
+  color: var(--text-primary) !important;
+  padding: 6px 12px !important;
+  font-size: 13px !important;
+  display: flex !important;
+  align-items: center !important;
+  gap: 8px !important;
+  width: 100% !important;
+  text-align: left !important;
+}
+
+.container :global(.sp-file-explorer .sp-button:hover) {
+  background: var(--hover-bg) !important;
+}
+
+.container :global(.sp-file-explorer .sp-button svg) {
+  flex-shrink: 0 !important;
+  width: 16px !important;
+  height: 16px !important;
+}
+
+.container :global(.sp-file-explorer .sp-button span) {
+  flex: 1 !important;
+  overflow: hidden !important;
+  text-overflow: ellipsis !important;
+  white-space: nowrap !important;
+}
+
+.placeholder {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  gap: 1.5rem;
+  color: var(--text-secondary);
+  padding: 2rem;
+  text-align: center;
+}
+
+.placeholder svg {
+  color: var(--accent-blue);
+  opacity: 0.3;
+}
+
+.placeholder h3 {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: var(--text-primary);
+  margin: 0;
+}
+
+.placeholder p {
+  font-size: 1rem;
+  margin: 0;
+  max-width: 400px;
+}
+
+.examplePrompts {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  margin-top: 1rem;
+}
+
+.examplePrompts span {
+  padding: 0.5rem 1rem;
+  background: var(--bg-tertiary);
+  border: 1px solid var(--border-color);
+  border-radius: 8px;
+  font-size: 0.875rem;
+  color: var(--text-secondary);
+  font-family: 'Courier New', monospace;
+}

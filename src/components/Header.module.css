@@ -1,0 +1,118 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 40px;
+  padding: 0 1rem;
+  background: var(--header-bg);
+  border-bottom: 1px solid var(--border-color);
+}
+
+/* Left: App Name */
+.appName {
+  display: flex;
+  align-items: center;
+  gap: 0.25rem;
+  font-size: 13px;
+  font-weight: 500;
+  color: var(--text-primary);
+  cursor: pointer;
+}
+
+.appName:hover {
+  color: var(--text-primary);
+}
+
+/* Center: Tabs */
+.tabs {
+  display: flex;
+  gap: 0.5rem;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.tab {
+  padding: 0.375rem 1rem;
+  font-size: 13px;
+  font-weight: 500;
+  color: var(--text-secondary);
+  background: transparent;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.tab:hover {
+  color: var(--text-primary);
+  background: var(--hover-bg);
+}
+
+.tab.active {
+  color: white;
+  background: var(--accent-blue);
+}
+
+/* Right: Actions */
+.actions {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.downloadBtn {
+  display: flex;
+  align-items: center;
+  gap: 0.375rem;
+  padding: 0.375rem 0.75rem;
+  font-size: 13px;
+  font-weight: 500;
+  color: white;
+  background: var(--button-blue);
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.downloadBtn:hover {
+  background: var(--accent-blue);
+}
+
+.actionBtn {
+  display: flex;
+  align-items: center;
+  gap: 0.375rem;
+  padding: 0.375rem 0.75rem;
+  font-size: 13px;
+  font-weight: 500;
+  color: var(--text-secondary);
+  background: transparent;
+  border: 1px solid var(--border-color);
+  border-radius: 6px;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.actionBtn:hover {
+  color: var(--text-primary);
+  background: var(--hover-bg);
+}
+
+.avatar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 28px;
+  height: 28px;
+  background: var(--hover-bg);
+  border-radius: 50%;
+  color: var(--text-secondary);
+  cursor: pointer;
+}
+
+.avatar:hover {
+  background: var(--border-color);
+  color: var(--text-primary);
+}
