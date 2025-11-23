@@ -4,16 +4,12 @@ from .protocol import (
     Message,
     Request,
     Response,
-    Notification,
-    MessageBus,
-    message_bus
+    Notification
 )
 
 __all__ = [
     'Message',
     'Request',
     'Response',
-    'Notification',
-    'MessageBus',
-    'message_bus'
+    'Notification'
 ]
